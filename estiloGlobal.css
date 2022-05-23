@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&family=Nunito+Sans:ital,wght@1,200&family=Poppins:wght@200;400;600&display=swap');
+
+html {
+	font-size: 10px;
+	overflow-x: hidden;
+}
+
+:root {
+	--green-1: #26643b;
+	--green-2: #a2de96;
+	--red-1: #c83737;
+	--lightyellow-1: #fad465;
+	--lightyellow-2: #f8c327;	
+	--yellow-1: #9f7700;
+	--yellow-2: #efba1e;
+	--beige-1: #f7dac8;
+	--beige-2: #efb490;
+	--beige-3: #cf6b30;
+	--black-1: #1f221e;
+	--black-2: #3f3c3c;
+	--black-3: #524e4e;
+	--white-1: #e8e8e8;
+	--outline-hover: .2rem solid var(--black-1);
+	--box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+
+}
+
+body{
+	background-color: var(--beige-1);
+	overflow-x: hidden;
+}
+
+section{
+	padding: 100px 0;
+}
+
+@media only screen and (max-width: 768px){
+	section{
+		padding: 50px 0; 
+	}
+}
+
+.contenedor{
+	max-width: 1200px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+h1, h2, h3, h4{
+	font-family: 'Poppins', sans-serif;
+}
+
+p{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	line-height: 1.4em;
+	font-size: 1.8rem;
+}
+
+a{
+	display: inline-block;
+	text-decoration: none;
+}

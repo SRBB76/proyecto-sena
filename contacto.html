@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacto | Projecto SENA</title>
+	<link rel="stylesheet" type="text/css" href="./reset.css">
+	<link rel="stylesheet" type="text/css" href="./estiloGlobal.css">
+	<link rel="stylesheet" type="text/css" href="./componentes.css">
+	<link rel="shortcut icon" href="./imagen/logo.ico" type="image/x-icon">
+	<!-- libreria de animacion css-->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+<!-- Barra de nav -->
+<div class="nav">
+	<div class="contenedor">
+		<div class="nav__wrapper">
+			<a href="./index.html" class="logo">
+				<img src="./imagen/logo.png" alt="lcrapidas">
+			</a>
+			<nav>
+				<div class="nav__icono">
+				<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round">
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+</svg>
+				</div> 
+				<div class="nav__bgRecubrimiento"></div>
+				<ul class="nav__lista">
+					<div class="nav__cerrar">
+					<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+</svg>	
+					</div>
+					<div class="nav__lista__wrapper">
+						<li> <a href="./index.html" class="nav__enlace">Inicio</a></li>
+						<li> <a href="login/inicio.php" class="nav__enlace">¡Trabaja con Nosotros!</a></li>
+						<li> <a href="./menu.html" class="nav__enlace">Menú</a></li>
+						<li> <a href="./acercade.html" class="nav__enlace">Acerca de</a></li>
+						<li> <a href="./contacto.html" class="nav__enlace">Contacto</a></li>
+						<li><a href="./agenda.html" class="btn primario-btn">Pedidos</a></li>
+					</div>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<!-- Fin de la Barra de nav -->
+
+<!-- Seccion de infromación del local -->
+
+<section id="localInfo" data-aos='fade-up'>
+	<div class="contenedor">
+		<div class="localInfo__wrapper">
+			<div class="localInfo__item">
+				<div class="localInfo__icono">
+					<img class="reloj" src="./imagen/reloj.svg" alt="icono">
+				</div>
+				<h3 class="localInfo__titulo">
+					10 AM - 9 PM
+				</h3>
+				<p class="localInfo__texto">
+					Hora de Apertura
+				</p>
+			</div>
+			<div class="localInfo__item">
+				<div class="localInfo__icono">
+					<img class="direccion" src="./imagen/direccion.svg" alt="icono">
+				</div>
+				<h3 class="localInfo__titulo">
+					Cr 25 A No. 56-59
+				</h3>
+				<p class="localInfo__texto">
+					Dirección
+				</p>
+			</div>
+			<div class="localInfo__item">
+				<div class="localInfo__icono">
+					<img class="celular" src="./imagen/celular.svg" alt="icono">
+				</div>
+				<h3 class="localInfo__titulo">
+					312 6958159
+				</h3>
+				<p class="localInfo__texto">
+					¡Llama ahora!
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Fin de la seccion de  información del local -->
+
+<!-- Sección de contacto -->
+ 
+  <section id="formulario" data-aos="fade-down">
+    <div class="contenedor">
+      <h3 class="form__titulo">
+        Contáctenos
+      </h3>
+      <div class="form__wrapper">
+        <form action="db/contacto_base.php" method="POST">
+          <div class="form__grupo">
+            <label for="firstName">Nombre</label>
+            <input type="text" id="firstName" name="firstName" required>
+          </div>
+          <div class="form__grupo">
+            <label for="lastName">Apellido</label>
+            <input type="text" id="lastName" name="lastName" required>
+          </div>
+          <div class="form__grupo">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form__grupo">
+            <label for="subject">Asunto</label>
+            <input type="text" id="subject" name="asunto" required>
+          </div>
+          <div class="form__grupo form__grupo__full">
+            <label for="comentarios">Mensaje</label>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10" required></textarea>
+          </div>
+          <button type="submit" class="btn primario-btn">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+<!-- Fin de la sección de contacto -->
+
+<!-- pie de pagina -->
+<footer>
+	<div class="contenedor">
+		<div class="wrapper__piedepagina">
+		<div class="piedepagina__col1">
+			<div class="piedepagina__logo">
+				<img src="./imagen/logo.png" alt="lcrapidas_logo">
+			</div>
+			<p class="piedepagina__desc">Comida rápida fresca y deliciosa para deleitar a toda la familia.
+			</p>
+			<div class="piedepagina__rrss">
+			<h4 class="piedepagina__rrss__titulo">¡Síguenos!</h4>
+			<ol>
+				<li>
+					<a href="#">
+						<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="1"
+						stroke-linecap="round"
+						stroke-linejoin="round">
+						<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+					    </svg>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="1"
+						stroke-linecap="round"
+						stroke-linejoin="round">
+						<rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+						<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+						<line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+					</svg>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="1"
+						stroke-linecap="round"
+						stroke-linejoin="round">
+						<path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+					</svg>
+					</a>
+				</li>
+			</ol>
+			</div>
+		</div>
+		<div class="piedepagina__col2">
+			<h3 class="piedepagina__texto__titulo">
+				Enlaces
+			</h3>
+			<ol class="piedepagina__texto">
+				<li>
+				<a href="./index.html">Inicio</a>
+				</li>
+				<li>
+				<a href="./menu.html">Menú</a>
+				</li>
+				<li>
+				<a href="./agenda.html">Agenda</a>
+				</li>
+				<li>
+				<a href="./acercade.html">Acerca de</a>
+				</li>
+				<li>
+				<a href="./contacto.html">Contacto</a>
+				</li>
+			</ol>
+		</div>	
+		<div class="piedepagina__col3">
+			<h3 class="piedepagina__texto__titulo">
+				Soporte
+			</h3>
+			<ol class="piedepagina__texto">
+				<li>
+				<a href="./index.html">Contacto de soporte</a>
+				</li>
+				<li>
+				<a href="#">Centro de Soporte</a>
+				</li>
+				<li>
+				<a href="#">Comentarios</a>
+				</li>
+			</ol>
+		</div>
+		<div class="piedepagina__col4">
+			<h3 class="piedepagina__texto__titulo">
+				Contacto
+			</h3>
+			<ol class="piedepagina__texto">
+				<li>
+				<a href="tel:312 6958159">312 6958159</a>
+				</li>
+				<li>
+				<a href="mailto:drooggemaakten@gmail.com">drooggemaakten@gmail.com</a>
+				</li>
+				<li>
+				<a href="#">Cr 25 A No. 56-59, Bogotá,D.C.</a>
+				</li>
+			</ol>
+		</div>	
+	</div>
+</footer>
+<div id="copyright">
+	<div class="contenedor">
+		<p class="copyright__texto">
+			© copyright 2022 L.C. Rápidas | Todos los derechos reservados
+		</p>
+	</div>
+</div>
+<!-- fin del pie de pagina -->
+
+<!-- libreria de animacion js -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<!-- Sccript para la libreria -->
+<script src="principal.js"></script>
+</body>
+</html>

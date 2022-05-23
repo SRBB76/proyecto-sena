@@ -1,0 +1,411 @@
+use lcrapidas
+
+db.createCollection("cliente")
+
+db.cliente.insertMany([{
+
+	"nombre": "Juan",
+	"apellido": "Franco",
+	"direccion": 0,
+	"movil": 3244109257,
+	"cedula": 1124 
+},
+
+{
+	"nombre":"Johan",
+	"apellido":"Dominguez",
+	"direccion":"Cl 418 No. 20-36",
+	"movil":3333770784,
+	"cedula":1137
+},
+
+{
+	"nombre":"Catalina",
+	"apellido": "Sepulveda",
+	"direccion": 0,
+	"movil": 3231673205,
+	"cedula": 1092
+},
+
+{
+	"nombre": "Robert",
+	"apellido": "Rodriguez",
+	"direccion": 0,
+	"movil": 3333008359,
+	"cedula": 1184
+
+},
+
+{
+	"nombre": "Adriana",
+	"apellido": "Monterroza",
+	"direccion": 0,
+	"movil": 3105113310,
+	"cedula": 1023
+
+},
+
+{
+	"nombre": "Alexander",
+	"apellido": "Carvajal",
+	"direccion": 0,
+	"movil": 3057152037,
+	"cedula": 1049
+
+},
+
+{
+	"nombre": "Marcela",
+	"apellido": "Rey",
+	"direccion": 0,
+	"movil": 3239373459,
+	"cedula": 1107
+
+},
+
+{
+	"nombre": "Liliana",
+	"apellido": "Cruz",
+	"direccion": 0,
+	"movil": 3244282089,
+	"cedula": 1018
+
+},
+
+{
+	"nombre": "Felipe",
+	"apellido": "Monroy",
+	"direccion": 0,
+	"movil": 3048434689,
+	"cedula": 1123
+
+},
+
+{
+	"nombre": "Catalina",
+	"apellido": "Acero",
+	"direccion": 0,
+	"movil": 3110562191,
+	"cedula": 1218
+
+},
+
+{
+	"nombre": "Patricia",
+	"apellido": "Mahecha",
+	"direccion": "Cl 90 No. 1212A-56",
+	"movil": 3181951168,
+	"cedula": 2751
+
+},
+
+{
+	"nombre": "Lisseth",
+	"apellido": "Blanco",
+	"direccion": "Cl 36A No. 19-72",
+	"movil": 3048479465,
+	"cedula": 4856
+
+},
+
+{
+	"nombre": "Maria",
+	"apellido": "Rocha",
+	"direccion": 0, 
+	"movil": 3156513208,
+	"cedula": 7604
+
+},
+
+{
+	"nombre": "Brigite",
+	"apellido": "Polanco",
+	"direccion": 0,
+	"movil": 3020468225,
+	"cedula": 1010
+
+},
+
+{
+	"nombre": "Villamizar",
+	"apellido": "Aristizabal",
+	"direccion": 0,
+	"movil": 3147148167,
+	"cedula": 6492
+
+}])
+
+db.cliente.find().pretty()
+
+db.createCollection("pedido")
+
+db.pedido.insertMany([
+
+{
+"id_cliente":1,
+"id_tipo_pago":6, 
+"id_empleado":1
+},
+
+{
+"id_cliente":2,
+"id_tipo_pago":1,
+"id_empleado":10
+},
+
+{
+"id_cliente":3,
+"id_tipo_pago":2,
+"id_empleado":3
+},
+
+{
+"id_cliente":4,
+"id_tipo_pago":6,
+"id_empleado":1
+},
+
+{
+"id_cliente":5,
+"id_tipo_pago":5,
+"id_empleado":4
+},
+
+{
+"id_cliente":6,
+"id_tipo_pago":8,
+"id_empleado":4
+},
+
+{
+"id_cliente":7,
+"id_tipo_pago":4,
+"id_empleado":3
+},
+
+{
+"id_cliente":8,
+"id_tipo_pago":2,
+"id_empleado":6
+},
+
+{
+"id_cliente":9,
+"id_tipo_pago":3,
+"id_empleado":6
+},
+
+{
+"id_cliente":10,
+"id_tipo_pago":3,
+"id_empleado":1
+},
+
+{
+"id_cliente":11,
+"id_tipo_pago":4,
+"id_empleado":9
+},
+
+{
+"id_cliente":12,
+"id_tipo_pago":8,
+"id_empleado":10
+},
+
+{
+"id_cliente":13,
+"id_tipo_pago":3,
+"id_empleado":4
+},
+
+{
+"id_cliente":14,
+"id_tipo_pago":7,
+"id_empleado":3
+},
+
+{
+"id_cliente":15,
+"id_tipo_pago":1,
+"id_empleado":5
+}])
+
+
+db.createCollection("departamento")
+
+db.departamento.insertMany([
+	
+	{
+
+"tipo":"Interior"},
+{
+"funcion":"Atención adentro del local"},
+{
+"tipo":"Exterior"},
+{
+"funcion":"Atención afuera del local"
+
+}
+])
+
+db.departamento.find().pretty()
+	
+
+db.createCollection("empleado")
+
+db.empleado.insertMany([
+
+{
+
+"id_departamento":1,
+"id_jefe":1,
+"nombre":"Estewil",
+"apellido":"Quesada",
+"cedula":5283,
+"direccion":"Cr 25 A No. 56-59",
+"sexo":"M",
+"edad":20,
+"movil":3205561944,
+"email":"rijorib437@outlook.com",
+"funcion":"Cajero"
+},
+
+{
+
+"id_departamento":1,
+"id_jefe":1,
+"nombre":"Julian",
+"apellido":"Romero",
+"cedula":1151,
+"direccion":"Cl 31 No. 41-09",
+"sexo":"M",
+"edad":26,
+"movil":3133012189,
+"email":"drooggemaakten@gmail.com",
+"funcion":"Contador"
+},
+
+{
+
+"id_departamento":1,
+"id_jefe":1,
+"nombre":"July",
+"apellido":"Pulido",
+"cedula":1153,
+"direccion":"Cr 25A No. 1-31",
+"sexo":"F",
+"edad":22,
+"movil":3015152429,
+"email":"nahmed_wahed121y@outlook.com",
+"funcion":"Cocinero"
+},
+
+{
+
+"id_departamento":1,
+"id_jefe":1,
+"nombre":"Patricia",
+"apellido":"Alvear",
+"cedula":4627,
+"direccion":"Cr 46A No. 81-52",
+"sexo":"F",
+"edad":34,
+"movil":3215696705,
+"email":"Lumblut40@gmail.com'",
+"funcion":"Cocinero"
+},
+
+{
+
+"id_departamento":1,
+"id_jefe":1,
+"nombre":"Ivonne",
+"apellido":"Juliette",
+"cedula":3885,
+"direccion":"Cl 44 No. 3 E-33",
+"sexo":"F",
+"edad":28,
+"movil":3239898344,
+"email":"fmedabbesej@outlook.com",
+"funcion":"Cocinero"
+},
+
+{
+
+"id_departamento":1,
+"id_jefe":1,
+"nombre":"Gabriel",
+"apellido":"Nieto",
+"cedula":1043,
+"direccion":"Cr 49 No. 63-53",
+"sexo":"M",
+"edad":19,
+"movil":3042140742,
+"email":"fruandubeuxr@yahoo.es.com",
+"funcion":"Cocinero"
+},
+
+{
+
+"id_departamento":2,
+"id_jefe":2,
+"nombre":"Camilo",
+"apellido":"Jimenez",
+"cedula":1008,
+"direccion":"Cl 22 No. 92-346",
+"sexo":"'M",
+"edad":30,
+"movil":3433856622,
+"email":"saibharathdas98y@outlook.com",
+"funcion":"Marketing"
+},
+
+{
+
+"id_departamento":2,
+"id_jefe":2,
+"nombre":"Pablo",
+"apellido":"Uribe",
+"cedula":1016,
+"direccion":"Cr 29 No. 26-68",
+"sexo":"M",
+"edad":18,
+"movil":3517694376,
+"email":"amedtel@gmail.com",
+"funcion":"Repartidor"
+},
+
+{
+
+"id_departamento":2,
+"id_jefe":2,
+"nombre":"Oscar",
+"apellido":"Ulloa",
+"cedula":1298,
+"direccion":"Av. 3 n35-61",
+"sexo":"M",
+"edad":21,
+"movil":3034633234,
+"email":"tedammmmfh@outlook.com",
+"funcion":"Repartidor"
+},
+
+{
+
+"id_departamento": 2,
+"id_jefe": 2,
+"nombre":"Karen",
+"apellido":"Pulido",
+"cedula": 2846,
+"direccion":"Cr 42 B No. 373 C-53",
+"sexo":"F",
+"edad": 22,
+"movil": 3242408989,
+"email":"xanas-wolff@gmail.com",
+"funcion":"Repartidor"
+
+}])
+
+
+db.empleado.find().pretty()

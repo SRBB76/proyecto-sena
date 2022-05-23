@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Inicio | Projecto SENA</title>
+	<link rel="stylesheet" type="text/css" href="./reset.css">
+	<link rel="stylesheet" type="text/css" href="./estiloGlobal.css">
+	<link rel="stylesheet" type="text/css" href="./componentes.css">
+	<link rel="stylesheet" type="text/css" href="./inicio.css">
+	<link rel="shortcut icon" href="./imagen/logo.ico" type="image/x-icon">
+
+	<!-- libreria de animacion css-->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+</head>
+<body>
+<!-- Barra de nav -->
+<div class="nav">
+	<div class="contenedor">
+		<div class="nav__wrapper">
+			<a href="./index.html" class="logo">
+				<img src="./imagen/logo.png" alt="lcrapidas">
+			</a>
+			<nav>
+				<div class="nav__icono">
+				<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round">
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+</svg>
+				</div> 
+				<div class="nav__bgRecubrimiento"></div>
+				<ul class="nav__lista">
+					<div class="nav__cerrar">
+					<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+</svg>	
+					</div>
+					<div class="nav__lista__wrapper">
+						<li> <a href="./index.html" class="nav__enlace">Inicio</a></li>
+						<li> <a href="login/inicio.php" class="nav__enlace">¡Trabaja con Nosotros!</a></li>
+						<li> <a href="./menu.html" class="nav__enlace">Menú</a></li>
+						<li> <a href="./acercade.html" class="nav__enlace">Acerca de</a></li>
+						<li> <a href="./contacto.html" class="nav__enlace">Contacto</a></li>
+						<li><a href="./agenda.html" class="btn primario-btn">Pedidos</a></li>
+					</div>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<!-- Fin de la Barra de nav -->
+
+<!-- Seccion principal inicio-->
+<section id="principal">
+	<div class="contenedor">
+		<div class="principal__wrapper">
+			<div class="principal__izq" data-aos="fade-left">
+				<div class="principal__wrapper__izq">
+					<h1 class="principal__encabezado">El sabor de lo único</h1>
+					<p class="principal__info">Somos un local de comidas rápidas multi-cocina que ofrece una amplia variedad de experiencias gastronómicas tanto en un ambiente informal como de alta cocina.</p>
+					<div class="boton__principal">
+						<a href="./menu.html" class="btn primario-btn">Revisa el Menú</a>
+						<a href="./agenda.html" class="btn">Pedidos</a>
+					</div>
+				</div>
+			</div>
+			<div class="principal__der" data-aos="fade-right">
+				<div class="principal__imgWrapper">
+				<img class="hamburguesa" src="./imagen/principalimg.png" alt="principal__imgWrapper_de_comida">
+			</div>
+		</div>
+		</div>
+	</div>
+</section>
+<!-- Seccion principal final -->
+
+<!-- Seccion de infromación del local -->
+
+<section id="localInfo" data-aos='fade-up'>
+	<div class="contenedor">
+		<div class="localInfo__wrapper">
+			<div class="localInfo__item">
+				<div class="localInfo__icono">
+					<img class="reloj" src="./imagen/reloj.svg" alt="icono">
+				</div>
+				<h3 class="localInfo__titulo">
+					10 AM - 9 PM
+				</h3>
+				<p class="localInfo__texto">
+					Hora de Apertura
+				</p>
+			</div>
+			<div class="localInfo__item">
+				<div class="localInfo__icono">
+					<img class="direccion" src="./imagen/direccion.svg" alt="icono">
+				</div>
+				<h3 class="localInfo__titulo">
+					Cr 25 A No. 56-59
+				</h3>
+				<p class="localInfo__texto">
+					Dirección
+				</p>
+			</div>
+			<div class="localInfo__item">
+				<div class="localInfo__icono">
+					<img class="celular" src="./imagen/celular.svg" alt="icono">
+				</div>
+				<h3 class="localInfo__titulo">
+					312 6958159
+				</h3>
+				<p class="localInfo__texto">
+					¡Llama ahora!
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Fin de la seccion de  información del local -->
+
+<!-- Nuestros especiales inicio -->
+
+<section id="especiales" data-aos="fade-up">
+	<div class="contenedor">
+		<div class="especiales__wrapper">
+			<div class="especiales__izq">
+				<div class="especiales__item">
+					<div class="especiales__item__img">
+						<img src="./imagen/pizza_criolla.jpg" alt="img_de_comida">
+					</div>
+					<h2 class="especiales__item__titulo">
+						Pizza Criolla
+					</h2>
+					<h3 class="especiales__item__precio">
+						$21.000
+					</h3>
+					<div class="especiales__item__estrellas">
+						<img src="./imagen/4.5estrellas.png" alt="4.5_estrellas">
+					</div>
+					<p class="especiales__item__desc">
+						Esta deliciosa Pizza Criolla es un plato glorioso y desordenado de bondad. Acompañado con unas crujientes patatas fritas cargadas con un montón de verduras frescas. Al añadir una mezcla de condimentos, queso mozarella, aceitunas verdes descarozadas y panceta ahumada en láminas, esta Pizza única es una explosión llena de sabor.
+					</p>
+				</div>
+				<div class="especiales__item">
+					<div class="especiales__item__img">
+						<img src="./imagen/salchi.jpg" alt="img_de_comida">
+					</div>
+					<h2 class="especiales__item__titulo">
+						Salchipapa
+					</h2>
+					<h3 class="especiales__item__precio">
+						$10.000
+					</h3>
+					<div class="especiales__item__estrellas">
+						<img src="./imagen/4estrellas.png" alt="4_estrellas">
+					</div>
+					<p class="especiales__item__desc">
+						Las Salchipapas son inmensamente satisfactorias con cualquier combinación de patatas frescas, salchicha de excelente calidad y queso, algo tan sencillo que con todo ello, es rematado con una deliciosa salsa o aderezo: cada bocado es una explosión de sabores y texturas.
+					</p>
+				</div>
+			</div>
+			<div class="especiales__der">
+				<h2 class="especiales__titulo">Nuestros Especiales</h2>
+				<p class="especiales__texto">
+					Todos nuestros alimentos se preparan a diario en nuestro restaurante para garantizar la máxima calidad y frescura de las comidas que se entregan a nuestros clientes.
+				</p>
+				<a href="./agenda.html" class="btn primario-btn">Pedidos</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Nuestros especiales fin -->
+
+<!-- Seccion de mejores platos -->
+
+<section id="platosGrid" data-aos="fade-up">
+	<div class="contenedor">
+		<h2 class="platosGrid__titulo">
+			Nuestros Mejores Platos
+		</h2>
+		<div class="platosGrid__wrapper">
+			<div class="platosGrid__item">
+				<div class="platosGrid__item__img">
+					<img src="./imagen/salchi.jpg" alt="img_de_comida">
+				</div>
+				<div class="platosGrid__item__info">
+					<h3 class="platosGrid__titulo">
+						Salchipapa
+					</h3>
+					<h3 class="platosGrid__item__precio">$10.000</h3>
+					<div class="platosGrid__item__estrellas">
+						<img src="./imagen/4estrellas.png" alt="4_estrellas">
+					</div>
+				</div>
+			</div>
+			<div class="platosGrid__item">
+				<div class="platosGrid__item__img">
+					<img src="./imagen/pizza_champiñones.jpg" alt="img_de_comida">
+				</div>
+				<div class="platosGrid__item__info">
+					<h3 class="platosGrid__titulo">
+						Pizza con Champiñones
+					</h3>
+					<h3 class="platosGrid__item__precio">$20.000</h3>
+					<div class="platosGrid__item__estrellas">
+						<img src="./imagen/3.5estrellas.png" alt="3.5_estrellas">
+					</div>
+				</div>
+			</div>
+			<div class="platosGrid__item">
+				<div class="platosGrid__item__img">
+					<img src="./imagen/pollo-frito.jpg" alt="img_de_comida">
+				</div>
+				<div class="platosGrid__item__info">
+					<h3 class="platosGrid__titulo">
+						Pollo Apanado
+					</h3>
+					<h3 class="platosGrid__item__precio">$20.000</h3>
+					<div class="platosGrid__item__estrellas">
+						<img src="./imagen/4estrellas.png" alt="4_estrellas">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Fin de la seccion de de mejores platos -->
+
+<!-- Seccion de descuentos -->
+
+<section id="descuento" data-aos="fade-up">
+	<div class="contenedor">
+		<div class="descuento__wrapper">
+			<div class="descuento__imagenes">
+				<div class="descuento__img1">
+					<img src="./imagen/pizza_piña.jpg" alt="img_de_comida">
+				</div>
+				<div class="descuento__img2">
+					<img src="./imagen/4_carnes.jpg" alt="img_de_comida">
+				</div>
+				<div class="descuento__img3">
+					<img src="./imagen/2_carnes.jpg" alt="img_de_comida">
+				</div>
+			</div>
+			<div class="descuento__info">
+				<h3 class="descuento__texto">¡40% DE DESCUENTO!</h3>
+				<h3 class="descuento__titulo">No te pierdas nuestros magníficos descuentos</h3>
+				<h3 class="descuento__precio">
+					<span class="descuento__precioViejo">$30.000</span>
+					<span class="descuento__precioNuevo">$18.000</span>
+				</h3>
+				<div class="descuento__estrellas">
+					<img src="./imagen/5estrellas.png" alt="5_estrellas">
+				</div>
+				<a href="./agenda.html" class="btn primario-btn">Pedidos</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Fin de la seccion de descuentos -->
+
+<!-- Sección de eventos  -->
+
+<section id="eventosInfo" data-aos="fade-up">
+	<div class="contenedor">
+		<div class="eventosInfo__wrapper">
+			<div class="eventosInfo__izq">
+				<div class="eventosInfo__item">
+					<div class="eventosInfo__item__img">
+						<img src="./imagen/eventos_empresariales.jpg" alt="eventos">
+					</div>
+					<div class="eventosInfo__item__info">
+						<h2 class="eventosInfo__item__titulo">
+							Eventos Empresariales
+						</h2>
+						<p class="eventosInfo__item__texto">
+							L.C.Rápidas es el lugar perfecto para sus eventos corporativos. Estamos especializados en fiestas privadas.
+						</p>
+					</div>
+				</div>
+				<div class="eventosInfo__item">
+					<div class="eventosInfo__item__img">
+						<img src="./imagen/eventos_recreativos.jpg" alt="eventos">
+					</div>
+					<div class="eventosInfo__item__info">
+						<h2 class="eventosInfo__item__titulo">
+							Eventos Recreativos
+						</h2>
+						<p class="eventosInfo__item__texto">
+							L.C.Rápidas ofrece una experiencia de eventos recreativos íntimamente única en un entorno espectacular, sofisticado y confortable.
+						</p>
+					</div>
+				</div>
+			</div>
+				<div class="eventosInfo__der">
+					<h2 class="eventosInfo__titulo">
+						Registre su reserva para eventos
+					</h2>
+					<p class="eventosInfo__texto">
+						Reserve su evento privado o función corporativa en la cocina de Juan para vivir una experiencia verdaderamente única.
+					</p>
+					<a href="./contacto.html" class="btn primario-btn">
+						Contáctenos
+					</a>
+				</div>
+		</div>
+	</div>
+</section>
+
+<!-- Fin de la sección de eventos -->
+
+<!-- Seccion Por que escogernos -->
+
+<section id="porqueEscogernos">
+	<div class="contenedor">
+		<div class="porqueEscogernos__wrapper">
+			<div class="porqueEscogernos__izq" data-aos="fade-right">
+				<h2 class="porqueEscogernos__titulo">
+					¿Por que escoger nuestra comida?
+				</h2>
+				<p class="porqueEscogernos__texto">
+					La calidad del servicio, la comida, el ambiente y el valor de los productos son los elementos principales para elegir un local de comidas rapidas. L.C.Rápidas es uno de los restaurantes más exquisitos de la Capital, con una vista cautivadora ubicado en la localidad de Kennedy, un ambiente perfecto y una comida deliciosa.
+				</p>
+			</div>
+			<div class="porqueEscogernos__der" data-aos="fade-left">
+				<div class="porqueEscogernos__items__wrapper">
+					<div class="porqueEscogernos__item">
+						<div class="porqueEscogernos__item__icono">
+							<img src="./imagen/porque_escogernos1.svg" alt="comida_de_calidad">
+						</div>
+						<p class="porqueEscogernos__item__texto">Comida de calidad</p>
+					</div>
+					<div class="porqueEscogernos__item">
+						<div class="porqueEscogernos__item__icono">
+							<img src="./imagen/porque_escogernos2.svg" alt="estilo_unico">
+						</div>
+						<p class="porqueEscogernos__item__texto">Estilo único</p>
+					</div>
+					<div class="porqueEscogernos__item">
+						<div class="porqueEscogernos__item__icono">
+							<img src="./imagen/porque_escogernos3.svg" alt="cocineros_experimentados">
+						</div>
+						<p class="porqueEscogernos__item__texto">Cocineros experimentados</p>
+					</div>
+					<div class="porqueEscogernos__item">
+						<div class="porqueEscogernos__item__icono">
+							<img src="./imagen/porque_escogernos4.svg" alt="mejor_servicio">
+						</div>
+						<p class="porqueEscogernos__item__texto">Mejor servicio disponible</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Fin de la seccion Por que escogernos -->
+
+<!-- Seccion de noticias de descuentos, promociones, dias especiales -->
+
+<section id="noticias" data-aos="fade-up">
+	<div class="contenedor">
+		<div class="noticias__wrapper">
+			<div class="noticias__info">
+				<h3 class="noticias__titulo">No te pierdas nuestras últimas noticias</h3>
+				<p class="noticias__texto">Recibe notificaciones con las últimas noticias y ofertas recientes de L.C.Rápidas</p>
+			</div>
+			<div class="noticias__formulario">
+				<form>
+					<label for="email">
+						<input type="email" autocomplete="on" placeholder="Tu correo electrónico">
+					</label>
+					<button type="submit">¡Únete!</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Fin de la seccion de noticias de descuentos, promociones, dias especiales -->
+
+
+<!-- pie de pagina -->
+<footer>
+	<div class="contenedor">
+		<div class="wrapper__piedepagina">
+		<div class="piedepagina__col1">
+			<div class="piedepagina__logo">
+				<img src="./imagen/logo.png" alt="lcrapidas_logo">
+			</div>
+			<p class="piedepagina__desc">Comida rápida fresca y deliciosa para deleitar a toda la familia.
+			</p>
+			<div class="piedepagina__rrss">
+			<h4 class="piedepagina__rrss__titulo">¡Síguenos!</h4>
+			<ol>
+				<li>
+					<a href="#">
+						<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="1"
+						stroke-linecap="round"
+						stroke-linejoin="round">
+						<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+					    </svg>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="1"
+						stroke-linecap="round"
+						stroke-linejoin="round">
+						<rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+						<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+						<line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+					</svg>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="1"
+						stroke-linecap="round"
+						stroke-linejoin="round">
+						<path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+					</svg>
+					</a>
+				</li>
+			</ol>
+			</div>
+		</div>
+		<div class="piedepagina__col2">
+			<h3 class="piedepagina__texto__titulo">
+				Enlaces
+			</h3>
+			<ol class="piedepagina__texto">
+				<li>
+				<a href="./index.html">Inicio</a>
+				</li>
+				<li>
+				<a href="./menu.html">Menú</a>
+				</li>
+				<li>
+				<a href="./agenda.html">Agenda</a>
+				</li>
+				<li>
+				<a href="./acercade.html">Acerca de</a>
+				</li>
+				<li>
+				<a href="./contacto.html">Contacto</a>
+				</li>
+			</ol>
+		</div>	
+		<div class="piedepagina__col3">
+			<h3 class="piedepagina__texto__titulo">
+				Soporte
+			</h3>
+			<ol class="piedepagina__texto">
+				<li>
+				<a href="./index.html">Contacto de soporte</a>
+				</li>
+				<li>
+				<a href="#">Centro de Soporte</a>
+				</li>
+				<li>
+				<a href="#">Comentarios</a>
+				</li>
+			</ol>
+		</div>
+		<div class="piedepagina__col4">
+			<h3 class="piedepagina__texto__titulo">
+				Contacto
+			</h3>
+			<ol class="piedepagina__texto">
+				<li>
+				<a href="tel:312 6958159">312 6958159</a>
+				</li>
+				<li>
+				<a href="mailto:drooggemaakten@gmail.com">drooggemaakten@gmail.com</a>
+				</li>
+				<li>
+				<a href="#">Cr 25 A No. 56-59, Bogotá,D.C.</a>
+				</li>
+			</ol>
+		</div>	
+	</div>
+</footer>
+<div id="copyright">
+	<div class="contenedor">
+		<p class="copyright__texto">
+			© copyright 2022 L.C. Rápidas | Todos los derechos reservados
+		</p>
+	</div>
+</div>
+<!-- fin del pie de pagina -->
+
+<!-- libreria de animacion js -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<!-- Sccript para la libreria -->
+<script src="principal.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+/*estilos de titulo de pagina*/
+#titulo__pagina{
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+}
+
+.titulo__texto{
+	font-size: 2.2rem;
+	color: var(--black-1)
+}
+@media only screen and (min-width: 768px){
+	#titulo__pagina{
+		padding-top: 5rem;
+		padding-bottom: 3rem;
+	}
+
+	.titulo__texto{
+		font-size: 3.6rem; 
+	}
+}
+
+/*especials menu*/
+
+#especiales{
+	padding: 0;
+}
+
+.especiales__titulo{
+	font-size: 1.8rem;
+	color: var(--black-1);
+	margin-bottom: 2rem;
+}
+
+.especiales__wrapper{
+	display: flex;
+	gap: 1.5rem;
+	flex-direction: column;
+	max-width: 400px;
+}
+
+.especiales__item{
+	flex: 1;
+	display: flex;
+	gap: 2rem;
+	background-color: var(--lightyellow-1);
+	padding: 1.5rem;
+	border-radius: 12px;
+}
+
+.especiales__item__img,
+.especiales__item__info{
+	flex: 1;
+}
+
+.especiales__item__img{
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+.especiales__item__img img{
+	object-fit: cover;
+}
+
+.especiales__item__titulo{
+	font-size: 2.4rem;
+	font-weight: 500;
+	margin-bottom: 1rem;
+	color: var(--black-1);
+	line-height: 1.2rem;
+}
+
+.especiales__item__precio{
+	font-size: 1.8rem;
+	color: var(--green-1);
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+.especiales__item__estrellas{
+	height: 1.5rem;
+	width: max-content;
+	margin-bottom: 1rem;
+}
+
+.especiales__item {
+	flex: 1;
+	display: flex;
+	gap: 2rem;
+	background-color: var(--lightyellow-1);
+	padding: 1.5rem;
+	border-radius: 12px;
+    padding: 3rem 2rem;
+    box-shadow: var(--box-shadow);
+    outline-offset: -1rem;
+    text-align: center;
+    transition: .2s linear;
+}
+
+.especiales__item:hover{
+    outline: var(--outline-hover);
+    outline-offset: 0rem;
+}
+
+.btn__menu{
+    margin-top: 3.2rem;
+    display: inline-block;
+    padding: 1rem 4rem;
+    font-size: 1.8rem;
+    border-radius: 12rem;
+    border: 0.2rem solid var(--black-2);
+    color:var(--black-1);
+    cursor: pointer;
+    background: none;
+
+}
+
+.btn__menu:hover{
+    background: var(--yellow-2);
+    color: var(--white-1);
+}
+
+
+@media only screen and (min-width: 768px){
+	.especiales__item{
+		font-size: 2.4rem;
+	}
+
+	.especiales__wrapper{
+		flex-direction: row;
+		gap: 2rem;
+		max-width: none;
+	}
+	.especiales__item{
+		padding: 3rem;
+		gap:2rem;
+	}
+
+	.especiales__item__titulo{
+		font-size: 3rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.especiales__item__precio{
+		font-size: 2.4rem;
+		margin-bottom: 1.5rem;
+	}
+
+}
+
+@media only screen and (min-width: 1100px){
+	.especiales__item__img{
+		flex: 4; 
+	}
+	.especiales__item__info{
+		flex: 3; 
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.platosGrid__item__img img{
+		height: 160px;
+	}
+}
+
+/*estilos de los mejores platos*/
+
+#platosGrid {
+	padding-bottom: 0;
+}
+#platosGrid:last-of-type {
+	padding-bottom: 10rem;
+}
+
+
+.platosGrid__item{
+	box-shadow: var(--box-shadow);
+    outline-offset: -1rem;
+    text-align: center;
+    transition: .2s linear;
+}
+
+.platosGrid__item:hover{
+    outline: var(--outline-hover);
+    outline-offset: 0rem;
+}
