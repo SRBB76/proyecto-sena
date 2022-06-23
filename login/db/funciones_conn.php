@@ -1,5 +1,7 @@
 <?php
 
+class funciones_conn{
+
 function inputVacio($nombre, $email, $ndu, $cdu, $cdure) {
 	$resultado;
 	if (empty($nombre) || empty($email) || empty($ndu) || empty($cdu) || empty($cdure)) {
@@ -124,4 +126,5 @@ function loginUser($conn, $ndu, $cdu){
 		header("location: ../login.php");
 		exit();
 	}
+}
 }
